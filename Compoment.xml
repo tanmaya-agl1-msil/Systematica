@@ -1,0 +1,1113 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<article lang="">
+<para>
+<para/>
+</para>
+<para>AZURE</para>
+<orderedlist>
+<listitem>
+<para>Components</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Tenant (Azure AD Directory) – Identity boundary</para>
+</listitem>
+<listitem>
+<para>Management Groups – Organize multiple subscriptions</para>
+</listitem>
+<listitem>
+<para>Subscriptions – Billing and access boundary</para>
+</listitem>
+<listitem>
+<para>Resource Groups (RGs) – Logical containers for resources</para>
+</listitem>
+<listitem>
+<para>Azure Resource Manager (ARM) – Deployment and governance engine</para>
+</listitem>
+<listitem>
+<para>Infrastructure-as-Code (IAC) – ARM Templates, Bicep, Terraform</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Networking Architecture </para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Virtual Networks (VNets)</para>
+</listitem>
+<listitem>
+<para>Subnets</para>
+</listitem>
+<listitem>
+<para>Network Security Groups (NSGs)</para>
+</listitem>
+<listitem>
+<para>Azure Firewall / NVAs</para>
+</listitem>
+<listitem>
+<para>Load Balancers (L4) & Application Gateway (L7)</para>
+</listitem>
+<listitem>
+<para>VPN Gateway / ExpressRoute</para>
+</listitem>
+<listitem>
+<para>Private Endpoints / Private DNS Zones</para>
+</listitem>
+<listitem>
+<para>Hub-Spoke and Mesh Architectures</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Compute Architecture (Where Applications Run)</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Virtual Machines (IaaS)</para>
+</listitem>
+<listitem>
+<para>VM Scale Sets (VMSS)</para>
+</listitem>
+<listitem>
+<para>Azure App Service (PaaS)</para>
+</listitem>
+<listitem>
+<para>Azure Kubernetes Service (AKS)</para>
+</listitem>
+<listitem>
+<para>Azure Container Instances (ACI)</para>
+</listitem>
+<listitem>
+<para>Azure Functions (Serverless)</para>
+</listitem>
+<listitem>
+<para>Azure Batch (HPC processing)</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Azure Storage & Data Architecture (Data Persistence Layer)</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Blob Storage</para>
+</listitem>
+<listitem>
+<para>Azure Files</para>
+</listitem>
+<listitem>
+<para>Managed Disks</para>
+</listitem>
+<listitem>
+<para>Queue & Table Storage</para>
+</listitem>
+<listitem>
+<para>Data Lake Storage</para>
+</listitem>
+<listitem>
+<para>Redundancy Options:</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>LRS – Local Redundancy</para>
+</listitem>
+<listitem>
+<para>ZRS – Zone Redundancy</para>
+</listitem>
+<listitem>
+<para>GRS – Geo Redundancy</para>
+</listitem>
+<listitem>
+<para>GZRS – Geo-Zone Redundancy</para>
+</listitem>
+</orderedlist>
+<para/>
+<para/>
+<orderedlist>
+<listitem>
+<para>Identity & Access Management (Security & Access Control)</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Azure Active Directory (AAD)</para>
+</listitem>
+<listitem>
+<para>Role-Based Access Control (RBAC)</para>
+</listitem>
+<listitem>
+<para>Managed Identities</para>
+</listitem>
+<listitem>
+<para>Conditional Access Policies</para>
+</listitem>
+<listitem>
+<para>Multi-Factor Authentication (MFA)</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Databases & Data Platforms (Structured and Unstructured Data Services)</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Azure SQL Database</para>
+</listitem>
+<listitem>
+<para>Azure SQL Managed Instance</para>
+</listitem>
+<listitem>
+<para>Azure PostgreSQL / MySQL</para>
+</listitem>
+<listitem>
+<para>Cosmos DB (globally distributed)</para>
+</listitem>
+<listitem>
+<para>Analytics:</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>DevOps & Automation Architecture (Automation & CI/CD Engine)</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>DevOps Tools:</para>
+</listitem>
+<listitem>
+<para>Automation Tools:</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Monitoring, Logging & Observability (Operational Visibility)</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Azure Monitor</para>
+</listitem>
+<listitem>
+<para>Application Insights</para>
+</listitem>
+<listitem>
+<para>Log Analytics Workspace (LAW)</para>
+</listitem>
+<listitem>
+<para>Network Watcher</para>
+</listitem>
+<listitem>
+<para>Alerts & Metrics Explorer</para>
+</listitem>
+<listitem>
+<para>Azure Advisor (best-practice recommendations)</para>
+</listitem>
+</orderedlist>
+<para/>
+<para/>
+<orderedlist>
+<listitem>
+<para>Security, Governance & Compliance Architecture</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Azure Policy</para>
+</listitem>
+<listitem>
+<para>Azure Blueprints</para>
+</listitem>
+<listitem>
+<para>Microsoft Defender for Cloud</para>
+</listitem>
+<listitem>
+<para>Key Vault</para>
+</listitem>
+<listitem>
+<para>Compliance Manager</para>
+</listitem>
+</orderedlist>
+<para>AWS</para>
+<orderedlist>
+<listitem>
+<para>Compute</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>EC2                                                 </para>
+</listitem>
+<listitem>
+<para>Lightsail                                        </para>
+</listitem>
+<listitem>
+<para>Lambda</para>
+</listitem>
+<listitem>
+<para>Batch</para>
+</listitem>
+<listitem>
+<para>Elastic Beanstalk</para>
+</listitem>
+<listitem>
+<para>Serverless Application Repository</para>
+</listitem>
+<listitem>
+<para>AWS Outposts</para>
+</listitem>
+<listitem>
+<para>EC2 Image Builder</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Storage</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>S3</para>
+</listitem>
+<listitem>
+<para>EFS </para>
+</listitem>
+<listitem>
+<para>FSx</para>
+</listitem>
+<listitem>
+<para>S3 Glacier</para>
+</listitem>
+<listitem>
+<para>Storage Gateway</para>
+</listitem>
+<listitem>
+<para>AWS Backup</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Database</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>RDS</para>
+</listitem>
+<listitem>
+<para>DynamoDB</para>
+</listitem>
+<listitem>
+<para>ElastiCache</para>
+</listitem>
+<listitem>
+<para>Neptune</para>
+</listitem>
+<listitem>
+<para>Amazon Redshift</para>
+</listitem>
+<listitem>
+<para>Amazon QLDB</para>
+</listitem>
+<listitem>
+<para>Amazon DocumentDB</para>
+</listitem>
+<listitem>
+<para>Amazon Keyspaces</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Migration & Transfer</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>AWS Migration Hub</para>
+</listitem>
+<listitem>
+<para>Application Discovery Service</para>
+</listitem>
+<listitem>
+<para>Database Migration Service</para>
+</listitem>
+<listitem>
+<para>Server Migration Service</para>
+</listitem>
+<listitem>
+<para>AWS Transfer Family</para>
+</listitem>
+<listitem>
+<para>Snowball</para>
+</listitem>
+<listitem>
+<para>DataSync</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Networking & Content Delivery</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>VPC</para>
+</listitem>
+<listitem>
+<para>CloudFront</para>
+</listitem>
+<listitem>
+<para>Route 53</para>
+</listitem>
+<listitem>
+<para>API Gateway</para>
+</listitem>
+<listitem>
+<para>Direct Connect</para>
+</listitem>
+<listitem>
+<para>AWS App Mesh</para>
+</listitem>
+<listitem>
+<para>AWS Cloud Map</para>
+</listitem>
+<listitem>
+<para>Global Accelerator</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Developer Tools</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>CodeStar</para>
+</listitem>
+<listitem>
+<para>CodeCommit</para>
+</listitem>
+<listitem>
+<para>CodeBuild</para>
+</listitem>
+<listitem>
+<para>CodeDeploy</para>
+</listitem>
+<listitem>
+<para>CodePipeline</para>
+</listitem>
+<listitem>
+<para>Cloud9</para>
+</listitem>
+<listitem>
+<para>X-Ray</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Customer Enablement</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>AWS IQ</para>
+</listitem>
+<listitem>
+<para>Support</para>
+</listitem>
+<listitem>
+<para>Managed Services</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Blockchain</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Amazon Managed Blockchain    </para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Management & Governance</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>AWS Organizations</para>
+</listitem>
+<listitem>
+<para>CloudWatch</para>
+</listitem>
+<listitem>
+<para>AWS Auto Scaling</para>
+</listitem>
+<listitem>
+<para>CloudFormation</para>
+</listitem>
+<listitem>
+<para>CloudTrail</para>
+</listitem>
+<listitem>
+<para>Config</para>
+</listitem>
+<listitem>
+<para>OpsWorks</para>
+</listitem>
+<listitem>
+<para>Service Catalog</para>
+</listitem>
+<listitem>
+<para>Systems Manager</para>
+</listitem>
+<listitem>
+<para>AWS AppConfig</para>
+</listitem>
+<listitem>
+<para>Trusted Advisor</para>
+</listitem>
+<listitem>
+<para>Control Tower</para>
+</listitem>
+<listitem>
+<para>AWS License Manager</para>
+</listitem>
+<listitem>
+<para>AWS Well-Architected Tool</para>
+</listitem>
+<listitem>
+<para>Personal Health Dashboard </para>
+</listitem>
+<listitem>
+<para>AWS Chatbot</para>
+</listitem>
+<listitem>
+<para>Launch Wizard</para>
+</listitem>
+<listitem>
+<para>AWS Compute Optimizer</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Media Services</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Elastic Transcoder</para>
+</listitem>
+<listitem>
+<para>Kinesis Video Streams</para>
+</listitem>
+<listitem>
+<para>MediaConnect</para>
+</listitem>
+<listitem>
+<para>MediaConvert</para>
+</listitem>
+<listitem>
+<para>MediaLive</para>
+</listitem>
+<listitem>
+<para>MediaPackage</para>
+</listitem>
+<listitem>
+<para>MediaStore</para>
+</listitem>
+<listitem>
+<para>MediaTailor</para>
+</listitem>
+<listitem>
+<para>Elemental Appliances & Software</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Machine Learning</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Amazon SageMaker</para>
+</listitem>
+<listitem>
+<para>Amazon CodeGuru</para>
+</listitem>
+<listitem>
+<para>Amazon Comprehend</para>
+</listitem>
+<listitem>
+<para>Amazon Forecast</para>
+</listitem>
+<listitem>
+<para>Amazon Lex</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Analytics</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Athena</para>
+</listitem>
+<listitem>
+<para>EMR</para>
+</listitem>
+<listitem>
+<para>CloudSearch</para>
+</listitem>
+<listitem>
+<para>Elasticsearch Service</para>
+</listitem>
+<listitem>
+<para>Kinesis</para>
+</listitem>
+<listitem>
+<para>Data Pipeline</para>
+</listitem>
+<listitem>
+<para>AWS Glue</para>
+</listitem>
+<listitem>
+<para>AWS Lake Formation</para>
+</listitem>
+<listitem>
+<para>MSK</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Security, Identity, & Compliance</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>IAM</para>
+</listitem>
+<listitem>
+<para>Resource Access Manager</para>
+</listitem>
+<listitem>
+<para>Cognito</para>
+</listitem>
+<listitem>
+<para>Secrets Manager</para>
+</listitem>
+<listitem>
+<para>GuardDuty</para>
+</listitem>
+<listitem>
+<para>Inspector</para>
+</listitem>
+<listitem>
+<para>Amazon Macie</para>
+</listitem>
+<listitem>
+<para>AWS Single Sign-On</para>
+</listitem>
+<listitem>
+<para>Certificate Manager</para>
+</listitem>
+<listitem>
+<para>Key Management Service</para>
+</listitem>
+<listitem>
+<para>CloudHSM </para>
+</listitem>
+<listitem>
+<para>Directory Service</para>
+</listitem>
+<listitem>
+<para>WAF & Shield</para>
+</listitem>
+<listitem>
+<para>AWS Firewall Manager</para>
+</listitem>
+<listitem>
+<para>Artifact</para>
+</listitem>
+<listitem>
+<para>Security Hub</para>
+</listitem>
+<listitem>
+<para>Detective</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Mobile</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>AWS Amplify</para>
+</listitem>
+<listitem>
+<para>Device Farm</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Application Integration</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Step Functions</para>
+</listitem>
+<listitem>
+<para>Amazon AppFlow</para>
+</listitem>
+<listitem>
+<para>Amazon EventBridge</para>
+</listitem>
+<listitem>
+<para>Amazon MQ</para>
+</listitem>
+<listitem>
+<para>Simple Notification Service</para>
+</listitem>
+<listitem>
+<para>Simple Queue Service</para>
+</listitem>
+<listitem>
+<para>SWF </para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>AWS Cost Management</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>AWS Cost Explorer</para>
+</listitem>
+<listitem>
+<para>AWS Budgets</para>
+</listitem>
+<listitem>
+<para>AWS Marketplace Subscriptions</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Customer Engagement</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Simple Email Service</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>End User Computing</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>WorkSpaces</para>
+</listitem>
+<listitem>
+<para>AppStream 2.0</para>
+</listitem>
+<listitem>
+<para>WorkDocs</para>
+</listitem>
+<listitem>
+<para>WorkLink</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Internet Of Things</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>IoT Core</para>
+</listitem>
+<listitem>
+<para>FreeRTOS</para>
+</listitem>
+<listitem>
+<para>IoT 1-Click</para>
+</listitem>
+<listitem>
+<para>IoT Analytics</para>
+</listitem>
+<listitem>
+<para>IoT Device Defender</para>
+</listitem>
+<listitem>
+<para>IoT Device Management</para>
+</listitem>
+<listitem>
+<para>IoT Events</para>
+</listitem>
+<listitem>
+<para>IoT Greengrass</para>
+</listitem>
+<listitem>
+<para>IoT SiteWise</para>
+</listitem>
+<listitem>
+<para>IoT Things Graph</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Game Development</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Amazon GameLift</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Containers</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Elastic Container Registry</para>
+</listitem>
+<listitem>
+<para>Elastic Container Service</para>
+</listitem>
+<listitem>
+<para>Elastic Kubernetes Service</para>
+</listitem>
+</orderedlist>
+<para/>
+<para/>
+<orderedlist>
+<listitem>
+<para>Global Infrastructure</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Regions</para>
+</listitem>
+<listitem>
+<para>Zones</para>
+</listitem>
+<listitem>
+<para>Edge Locations / Points of Presence (PoPs)</para>
+</listitem>
+<listitem>
+<para>Global Network Backbone</para>
+</listitem>
+<listitem>
+<para>Resource Hierarchy </para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Compute Layer</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Compute Engine (VMs)</para>
+</listitem>
+<listitem>
+<para>Google Kubernetes Engine (GKE)</para>
+</listitem>
+<listitem>
+<para>Cloud Run</para>
+</listitem>
+<listitem>
+<para>App Engine</para>
+</listitem>
+<listitem>
+<para>Cloud Functions</para>
+</listitem>
+<listitem>
+<para>Bare Metal Solution</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Storage Layer</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Cloud Storage</para>
+</listitem>
+<listitem>
+<para>Persistent Disk</para>
+</listitem>
+<listitem>
+<para>Local SSD</para>
+</listitem>
+<listitem>
+<para>Filestore</para>
+</listitem>
+<listitem>
+<para>Backup and DR</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Database Layer</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Cloud SQL</para>
+</listitem>
+<listitem>
+<para>AlloyDB</para>
+</listitem>
+<listitem>
+<para>Spanner</para>
+</listitem>
+<listitem>
+<para>Firestore</para>
+</listitem>
+<listitem>
+<para>Bigtable</para>
+</listitem>
+<listitem>
+<para>Memorystore</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Networking Layer</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Virtual Private Cloud (VPC)</para>
+</listitem>
+<listitem>
+<para>Subnets</para>
+</listitem>
+<listitem>
+<para>Firewall Rules</para>
+</listitem>
+<listitem>
+<para>Cloud Load Balancing</para>
+</listitem>
+<listitem>
+<para>Cloud DNS</para>
+</listitem>
+<listitem>
+<para>Cloud CDN</para>
+</listitem>
+<listitem>
+<para>Cloud NAT</para>
+</listitem>
+<listitem>
+<para>Cloud Router</para>
+</listitem>
+<listitem>
+<para>VPN</para>
+</listitem>
+<listitem>
+<para>Interconnect</para>
+</listitem>
+<listitem>
+<para>Traffic Director</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Identity & Security Layer</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Identity and Access Management (IAM)</para>
+</listitem>
+<listitem>
+<para>Cloud Identity</para>
+</listitem>
+<listitem>
+<para>Security Command Center</para>
+</listitem>
+<listitem>
+<para>Cloud Armor</para>
+</listitem>
+<listitem>
+<para>Secret Manager</para>
+</listitem>
+<listitem>
+<para>Key Management Service (KMS)</para>
+</listitem>
+<listitem>
+<para>Certificate Manager</para>
+</listitem>
+<listitem>
+<para>VPC Service Controls</para>
+</listitem>
+<listitem>
+<para>Identity-Aware Proxy (IAP) </para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Data Analytics Layer</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>BigQuery</para>
+</listitem>
+<listitem>
+<para>Dataflow</para>
+</listitem>
+<listitem>
+<para>Dataproc</para>
+</listitem>
+<listitem>
+<para>Pub/Sub</para>
+</listitem>
+<listitem>
+<para>Data Fusion</para>
+</listitem>
+<listitem>
+<para>Dataplex</para>
+</listitem>
+<listitem>
+<para>Composer (Managed Airflow)</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>AI & Machine Learning Layer</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Vertex AI</para>
+</listitem>
+<listitem>
+<para>AutoML</para>
+</listitem>
+<listitem>
+<para>AI APIs </para>
+</listitem>
+<listitem>
+<para>Gemini on Vertex AI</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>DevOps & Application Delivery</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Cloud Build</para>
+</listitem>
+<listitem>
+<para>Artifact Registry</para>
+</listitem>
+<listitem>
+<para>Cloud Deploy</para>
+</listitem>
+<listitem>
+<para>Source Repositories</para>
+</listitem>
+<listitem>
+<para>Deployment Manager / Infrastructure as Code integrations</para>
+</listitem>
+<listitem>
+<para>Terraform integrations</para>
+</listitem>
+</orderedlist>
+<para/>
+<orderedlist>
+<listitem>
+<para>Monitoring & Operations</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Cloud Monitoring</para>
+</listitem>
+<listitem>
+<para>Cloud Logging</para>
+</listitem>
+<listitem>
+<para>Cloud Trace</para>
+</listitem>
+<listitem>
+<para>Cloud Profiler</para>
+</listitem>
+<listitem>
+<para>Error Reporting</para>
+</listitem>
+<listitem>
+<para>Cloud Audit Logs</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Messaging & Integration</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Pub/Sub</para>
+</listitem>
+<listitem>
+<para>Eventarc</para>
+</listitem>
+<listitem>
+<para>Apigee</para>
+</listitem>
+<listitem>
+<para>Workflows</para>
+</listitem>
+<listitem>
+<para>Application Integration</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Management & Governance</para>
+</listitem>
+</orderedlist>
+<orderedlist>
+<listitem>
+<para>Resource Manager</para>
+</listitem>
+<listitem>
+<para>Organization Policies</para>
+</listitem>
+<listitem>
+<para>Billing Management</para>
+</listitem>
+<listitem>
+<para>Cloud Asset Inventory</para>
+</listitem>
+<listitem>
+<para>Policy Controller</para>
+</listitem>
+<listitem>
+<para>Config Connector</para>
+</listitem>
+</orderedlist>
+<para/>
+</article>
