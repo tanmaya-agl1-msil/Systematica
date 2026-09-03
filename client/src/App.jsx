@@ -4,7 +4,7 @@ import Canvas from './components/Canvas';
 import MetricsPanel from './components/MetricsPanel';
 import NodeConfig from './components/NodeConfig';
 import { api } from './lib/api';
-
+import { autoWire } from './lib/wiring';
 // Convert internal React Flow nodes -> server node shape.
 function serialize(nodes, edges) {
   return {
@@ -103,32 +103,28 @@ export default function App() {
     setSelectedId(null);
   };
 
-  // Insert suggested components from a remediation into the canvas.
+  // Insert suggested components from a remediation and auto-wire them into the flow.
   const applyFix = (types) => {
     if (!types?.length) return;
-    setNodes((nds) => {
-      const maxX = nds.reduce((m, n) => Math.max(m, n.position?.x || 0), 0);
-      const baseX = maxX + 220;
-      const additions = types
-        .map((t, i) => {
-          const spec = specsByType[t];
-          if (!spec) return null;
-          const id = `${t}_${Date.now().toString(36)}_${i}`;
-          return {
-            id,
-            type: 'arch',
-            componentType: t,
-            position: { x: baseX, y: 60 + i * 130 },
-            data: {
-              label: spec.label,
-              nodeType: t,
-              config: { ...(spec.defaultConfig || {}) }
-            }
-          };
-        })
-        .filter(Boolean);
-      return [...nds, ...additions];
+    let workNodes = [...nodes];
+    let workEdges = [...edges];
+    types.forEach((t, i) => {
+      const spec = specsByType[t];
+      if (!spec) return;
+      const id = `${t}_${Date.now().toString(36)}_${i}`;
+      const { position, addEdges, removeEdgeIds } = autoWire(t, id, workNodes, workEdges);
+      const newNode = {
+        id,
+        type: 'arch',
+        componentType: t,
+        position,
+        data: { label: spec.label, nodeType: t, config: { ...(spec.defaultConfig || {}) } }
+      };
+      workNodes = [...workNodes, newNode];
+      workEdges = workEdges.filter((e) => !removeEdgeIds.includes(e.id)).concat(addEdges);
     });
+    setNodes(workNodes);
+    setEdges(workEdges);
   };
 
   const save = async () => {

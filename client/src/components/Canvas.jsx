@@ -3,6 +3,8 @@ import ReactFlow, {
   Background,
   Controls,
   MiniMap,
+  Panel,
+  MarkerType,
   addEdge,
   applyNodeChanges,
   applyEdgeChanges,
@@ -13,6 +15,13 @@ import ArchNode from './nodes/ArchNode';
 import { providerLabel } from '../lib/componentSpecs';
 
 const nodeTypes = { arch: ArchNode };
+
+// Directional arrowheads on every edge signal the flow of traffic.
+const defaultEdgeOptions = {
+  animated: true,
+  markerEnd: { type: MarkerType.ArrowClosed, width: 16, height: 16, color: '#6ee7b7' },
+  style: { stroke: '#6ee7b7', strokeWidth: 1.5 }
+};
 
 function CanvasInner({ nodes, edges, setNodes, setEdges, onSelectNode, report, specsByType, provider }) {
   const wrapperRef = useRef(null);
@@ -95,10 +104,16 @@ function CanvasInner({ nodes, edges, setNodes, setEdges, onSelectNode, report, s
         onConnect={onConnect}
         onSelectionChange={onSelectionChange}
         nodeTypes={nodeTypes}
+        defaultEdgeOptions={defaultEdgeOptions}
         fitView
       >
         <Background gap={20} color="#253062" />
         <Controls showInteractive={false} />
+        <Panel position="top-left" className="flow-legend">
+          <span className="legend-arrow">→</span> traffic flow
+          <span className="legend-sep">·</span>
+          <span className="legend-swatch autowired" /> auto-wired
+        </Panel>
         <MiniMap
           nodeColor={(n) => {
             const s = n.data?.status;
