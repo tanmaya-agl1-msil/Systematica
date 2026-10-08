@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "test:vision": "node scripts/test-vision.mjs"
   },
   "dependencies": {
     "cors": "^2.8.5",

@@ -17,6 +17,9 @@ export const api = {
   components: () => req('/components'),
   evaluate: (nodes, edges) =>
     req('/evaluate', { method: 'POST', body: JSON.stringify({ nodes, edges }) }),
+  aiStatus: () => req('/analyze-image/status'),
+  analyzeImage: (image) =>
+    req('/analyze-image', { method: 'POST', body: JSON.stringify({ image }) }),
   listDesigns: () => req('/designs'),
   getDesign: (id) => req('/designs/' + id),
   saveDesign: (payload) =>

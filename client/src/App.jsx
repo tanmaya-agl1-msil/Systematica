@@ -3,6 +3,7 @@ import Palette from './components/Palette';
 import Canvas from './components/Canvas';
 import MetricsPanel from './components/MetricsPanel';
 import NodeConfig from './components/NodeConfig';
+import ImportImageModal from './components/ImportImageModal';
 import { api } from './lib/api';
 import { autoWire } from './lib/wiring';
 // Convert internal React Flow nodes -> server node shape.
@@ -54,6 +55,7 @@ export default function App() {
   const [designId, setDesignId] = useState(null);
   const [savedList, setSavedList] = useState([]);
   const [dbAvailable, setDbAvailable] = useState(false);
+  const [importOpen, setImportOpen] = useState(false);
   const evalTimer = useRef(null);
 
   // Load component catalog from server.
@@ -180,6 +182,16 @@ export default function App() {
     setDesignId(null);
   };
 
+  // Load an AI-transcribed diagram verbatim — no auto-wiring, no added components.
+  const loadImported = (graph) => {
+    const { nodes: n, edges: e } = hydrate(graph.nodes, graph.edges);
+    setNodes(n);
+    setEdges(e);
+    setDesignName(graph.title || 'Imported architecture');
+    setDesignId(null);
+    setSelectedId(null);
+  };
+
   return (
     <div className="app">
       <div className="topbar">
@@ -189,6 +201,7 @@ export default function App() {
           onChange={(e) => setDesignName(e.target.value)}
           style={{ maxWidth: 240 }}
         />
+        <button onClick={() => setImportOpen(true)}>Import image</button>
         <button onClick={loadTemplate}>Load sample</button>
         <button onClick={clear}>Clear</button>
         <div className="spacer" />
@@ -206,6 +219,13 @@ export default function App() {
       </div>
 
       <Palette specs={specs} provider={provider} onProviderChange={setProvider} />
+
+      <ImportImageModal
+        open={importOpen}
+        onClose={() => setImportOpen(false)}
+        onLoad={loadImported}
+        specsByType={specsByType}
+      />
 
       <Canvas
         nodes={nodes}
